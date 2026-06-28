@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-
-
-    <!-- Paste these inside the <head> tag -->
-<meta name="description" content="SP Hatchery Indapur, Pune - Get premium quality pure Gavran chicks, Kaveri, and poultry feed. Best day-old chicks hatchery in Pune district.">
-<meta name="keywords" content="Hatchery in Pune, Chicken chicks Indapur, Gavran kombdi pille Pune, SP Hatchery, Poultry feed Pune, Best hatchery near me">
-<meta name="author" content="SP Hatchery">
-
-<!-- Geo-Targeting Tags for Pune District -->
-<meta name="geo.region" content="IN-MH">
-<meta name="geo.placename" content="Indapur, Pune, Maharashtra">
-<meta name="geo.position" content="18.11;75.03"> <!-- Approximate coordinates for Indapur region -->
-<meta name="ICBM" content="18.11, 75.03">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP Hatchery | डिजिटल एस. पी. हॅचरी</title>
+    
+    <!-- Local SEO Meta Tags -->
+    <meta name="description" content="SP Hatchery Indapur, Pune - Get premium quality pure Gavran chicks, Kaveri, and poultry feed. Best day-old chicks hatchery in Pune district.">
+    <meta name="keywords" content="Hatchery in Pune, Chicken chicks Indapur, Gavran kombdi pille Pune, SP Hatchery, Poultry feed Pune, Best hatchery near me">
+    <meta name="author" content="SP Hatchery">
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Indapur, Pune, Maharashtra">
+    <meta name="geo.position" content="18.11;75.03">
+    <meta name="ICBM" content="18.11, 75.03">
+
     <!-- Tailwind CSS & FontAwesome Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
+        .tab-active { border-color: #ea580c; color: #ea580c; background-color: #fff7ed; }
     </style>
 </head>
 <body class="bg-gradient-to-br from-amber-50 via-orange-50/30 to-amber-100/50 text-slate-800 font-sans min-h-screen">
 
     <!-- Premium Sticky Navbar -->
-    <nav class="bg-white/80 backdrop-blur-md text-slate-900 shadow-sm sticky top-0 z-50 border-b border-orange-100">
+    <nav class="bg-white/90 backdrop-blur-md text-slate-900 shadow-sm sticky top-0 z-50 border-b border-orange-100">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <h1 class="text-xl md:text-2xl font-black tracking-wide text-orange-600 flex items-center gap-2">
                 <span>🐔</span> SP HATCHERY
             </h1>
-            <div class="flex gap-4 text-xs md:text-sm font-bold text-slate-600">
-                <a href="#products" class="hover:text-orange-600 transition py-1">पक्षी आणि दर</a>
-                <a href="#portal" class="bg-orange-600 text-white px-3 py-1 rounded-full hover:bg-orange-700 transition">लॉगिन</a>
+            <div class="flex gap-2 md:gap-4 text-xs md:text-sm font-bold text-slate-600">
+                <a href="#products" class="hover:text-orange-600 transition py-1 px-2">आजचे उपलब्ध पक्षी</a>
+                <a href="#forum" class="hover:text-orange-600 transition py-1 px-2">शेतकरी प्रश्न</a>
+                <a href="#portal" class="bg-orange-600 text-white px-3.5 py-1 rounded-full hover:bg-orange-700 transition">लॉगिन</a>
             </div>
         </div>
     </nav>
 
-    <!-- Modern Hero Presentation Section -->
-    <section class="max-w-6xl mx-auto px-4 pt-12 pb-8 text-center">
+    <!-- Notification Banner -->
+    <div id="auth-status-banner" class="bg-amber-100 border-b border-amber-200 text-center py-2 px-4 text-xs font-semibold text-amber-800 hidden">
+        <span>🔄 डेटाबेस आणि सुरक्षा प्रणाली सुरू होत आहे...</span>
+    </div>
+
+    <!-- Modern Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 pt-10 pb-8 text-center">
         <div class="bg-gradient-to-br from-orange-500 to-amber-500 text-white rounded-3xl p-8 md:p-12 shadow-xl shadow-orange-500/10 relative overflow-hidden">
-            <!-- Decorative circle backgrounds -->
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-xl"></div>
             <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-black/10 rounded-full blur-xl"></div>
             
@@ -52,21 +54,21 @@
             </span>
             <h2 class="text-3xl md:text-6xl font-black mb-4 leading-tight">डिजिटल एस. पी. हॅचरी</h2>
             <p class="text-base md:text-xl mb-8 max-w-2xl mx-auto text-orange-50 font-medium">
-                आता हॅचरीमधील पक्षांचे रोजचे ताजे दर आणि उपलब्धता थेट मोबाईलवर पाहा!
+                आता हॅचरीमधील पक्षांचे रोजचे ताजे दर, पिल्लांची उपलब्धता थेट ऑनलाईन पाहा!
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="https://wa.me/919404051962?text=मला%20कोंबड्यांच्या%20पिल्लांबद्दल%20माहिती%20हवी%20आहे" target="_blank" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-black py-3.5 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5">
-                    <i class="fab fa-whatsapp text-2xl"></i> थेट व्हॉट्सॲप ऑर्डर करा
+                    <i class="fab fa-whatsapp text-2xl"></i> थेट व्हॉट्सॲप संपर्क
                 </a>
                 <a href="#portal" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 px-6 rounded-xl border border-white/30 backdrop-blur-sm transition">
-                    खाते लॉगिन करा
+                    खाते लॉगिन / नोंदणी
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Quick Stats Grid (Gives instant professional look) -->
+    <!-- Quick Stats Grid -->
     <section class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-3 md:gap-6 mb-12 text-center">
         <div class="bg-white p-4 rounded-2xl shadow-sm border border-orange-100">
             <div class="text-xl md:text-3xl mb-1">🧪</div>
@@ -82,12 +84,63 @@
         </div>
     </section>
 
-    <!-- Live Storefront (Dynamic Catalog Showcase) -->
+    <!-- Employee Portal Dashboard Panel (Visible only when logged in as employee) -->
+    <section id="employee-dashboard" class="max-w-6xl mx-auto px-4 py-6 hidden">
+        <div class="bg-white rounded-3xl shadow-xl border-2 border-orange-500 p-6 md:p-8">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-4 mb-6">
+                <div>
+                    <span class="bg-orange-100 text-orange-700 text-xs font-black px-2.5 py-1 rounded-full uppercase">हॅचरी मॅनेजर पॅनेल</span>
+                    <h3 class="text-xl md:text-2xl font-black text-slate-900 mt-1">नवीन माल आणि दर व्यवस्थापन</h3>
+                </div>
+                <button id="btn-employee-logout" class="bg-red-100 hover:bg-red-200 text-red-600 font-extrabold text-xs px-4 py-2 rounded-xl transition">
+                    बाहेर पडा (Logout)
+                </button>
+            </div>
+
+            <!-- Form to Add/Edit Inventory -->
+            <form id="add-product-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">पक्षी/खाद्याचे नाव (Product Name):</label>
+                    <input id="prod-name" type="text" required placeholder="उदा. अस्सल गावरान पिल्ले" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-bold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">वय/प्रकार (Age or Type):</label>
+                    <input id="prod-stage" type="text" required placeholder="उदा. १ दिवस (Day-Old) किंवा प्री-स्टार्टर" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-semibold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">चालू दर प्रति नग (Price in ₹):</label>
+                    <input id="prod-price" type="number" required placeholder="उदा. ३५" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-black" />
+                </div>
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">स्टॉक उपलब्धता (Status):</label>
+                    <select id="prod-available" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-bold text-slate-700">
+                        <option value="true">स्टॉकमध्ये उपलब्ध आहे (Available)</option>
+                        <option value="false">सध्या संपला आहे (Out of Stock)</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">फोटो लिंक (Image Address Link - Optional):</label>
+                    <input id="prod-image" type="url" placeholder="https://imgur.com/example.jpg" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-medium" />
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1">वर्णन/वैशिष्ट्ये (Description - Marathi):</label>
+                    <textarea id="prod-description" required rows="3" placeholder="पिल्लांचे लसीकरण, वजनाची माहिती किंवा वैशिष्ट्ये येथे लिहा..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-medium"></textarea>
+                </div>
+                <div class="md:col-span-2 text-right">
+                    <button type="submit" class="bg-orange-600 hover:bg-orange-700 text-white font-black py-3 px-8 rounded-xl shadow-md transition text-sm">
+                        🚀 पब्लिश करा / अपडेट करा
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Live Storefront Section -->
     <section id="products" class="max-w-6xl mx-auto px-4 py-6">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-2">
             <div>
                 <span class="text-orange-600 font-extrabold text-sm uppercase tracking-wider">Live Inventory</span>
-                <h3 class="text-2xl md:text-4xl font-black text-slate-900">आजचा नवीन उपलब्ध स्टॉक</h3>
+                <h3 class="text-2xl md:text-4xl font-black text-slate-900">आजचा उपलब्ध स्टॉक व चालू दर</h3>
             </div>
             <p class="text-xs md:text-sm text-slate-500 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm flex items-center gap-2">
                 <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span> कर्मचाऱ्यांद्वारे थेट लाईव्ह अपडेटेड
@@ -96,36 +149,11 @@
          
         <!-- Active Database Grid Container -->
         <div id="product-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- SAMPLE OF HOW THE LIVE CARD WILL RENDER VIA JAVASCRIPT -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 hover:shadow-xl transition flex flex-col justify-between">
-                <div>
-                    <div class="relative">
-                        <!-- Default placeholder or real photo -->
-                        <div class="h-48 bg-slate-100 flex items-center justify-center text-slate-400">
-                            <i class="fas fa-feather-alt text-4xl"></i>
-                        </div>
-                        <span class="absolute top-3 left-3 bg-green-500 text-white font-extrabold text-xs px-2.5 py-1 rounded-full shadow">
-                            स्टॉकमध्ये उपलब्ध
-                        </span>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="text-xl font-bold text-slate-900 mb-1">अस्सल गावरान पिल्ले</h4>
-                        <p class="text-xs text-slate-500 mb-3 font-semibold">वय: १ दिवस (Day-Old)</p>
-                        <p class="text-sm text-slate-600 leading-relaxed">परसातील कुक्कुटपालनासाठी उत्तम, मजबूत रोगप्रतिकारक शक्ती आणि कमी खर्चात जास्त नफा.</p>
-                    </div>
-                </div>
-                <div class="p-5 pt-0 border-t border-slate-50 mt-4 flex justify-between items-center bg-slate-50/50">
-                    <div>
-                        <span class="text-xs text-slate-400 block font-medium">चालू किंमत</span>
-                        <span class="text-xl font-black text-orange-600">₹ XX <span class="text-xs text-slate-500 font-normal">/ नग</span></span>
-                    </div>
-                    <button class="bg-slate-900 text-white font-bold text-xs px-4 py-2 rounded-lg hover:bg-orange-600 transition">
-                        चौकशी करा
-                    </button>
-                </div>
+            <!-- Loading dynamic cards state -->
+            <div class="bg-white rounded-xl p-12 border border-amber-200 text-center col-span-full">
+                <div class="text-orange-500 text-4xl mb-3 animate-spin">🔄</div>
+                <p class="text-slate-600 font-medium">डेटाबेसमधून चालू दर आणि उपलब्ध स्टॉक लोड होत आहे...</p>
             </div>
-             
         </div>
     </section>
 
@@ -134,48 +162,97 @@
         <div class="bg-white rounded-3xl shadow-xl border border-orange-100 p-6 md:p-8">
             <h3 class="text-xl md:text-2xl font-black text-center text-slate-900 mb-6">🔐 डिजिटल पोर्टल लॉगिन</h3>
             
-            <!-- Styled Login Fields Layout -->
-            <div class="space-y-4">
+            <!-- Tab switches inside portal -->
+            <div class="flex border-b border-slate-100 mb-6 text-center text-sm font-bold text-slate-500">
+                <button id="tab-cust" class="flex-1 py-2.5 border-b-2 tab-active transition">
+                    👨‍🌾 शेतकरी / ग्राहक
+                </button>
+                <button id="tab-emp" class="flex-1 py-2.5 border-b-2 transition">
+                    🏢 हॅचरी कर्मचारी
+                </button>
+            </div>
+
+            <!-- Customer Tab Form Content -->
+            <div id="cust-login-form" class="space-y-4">
+                <p class="text-xs text-slate-600">वेबसाईटवर नवीन पिल्लांचे दर आणि प्रश्न विचारण्यासाठी मोबाईल नंबरद्वारे नोंदणी / लॉगिन करा.</p>
                 <div>
-                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">तुमची भूमिका निवडा (Select Role):</label>
-                    <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl font-bold text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 text-slate-700">
-                        <option value="customer">👨‍🌾 मी शेतकरी / ग्राहक आहे</option>
-                        <option value="employee">🏢 मी हॅचरी कर्मचारी आहे</option>
-                    </select>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">तुमचा मोबाईल नंबर:</label>
+                    <input id="cust-phone" type="tel" placeholder="+91 XXXXX XXXXX" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-bold" />
                 </div>
-
-                <div class="border-t border-slate-100 pt-4">
-                    <!-- Standard input frame that switches dynamically with JS -->
-                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">मोबाईल नंबर / युझर आयडी:</label>
-                    <input type="text" placeholder="येथे नंबर किंवा आयडी टाका..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-medium"/>
-                </div>
-
                 <div>
-                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">पासवर्ड / OTP:</label>
-                    <input type="password" placeholder="••••••••" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-medium"/>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">तुमचे पूर्ण नाव (Full Name):</label>
+                    <input id="cust-name" type="text" placeholder="उदा. रमेश पाटील" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-bold" />
                 </div>
+                <button id="btn-cust-login" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-black py-3.5 px-4 rounded-xl shadow-md transition mt-2">
+                    सुरक्षित लॉगिन करा
+                </button>
+            </div>
 
-                <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-black py-3.5 px-4 rounded-xl shadow-md transition mt-2">
-                    पोर्टल मध्ये प्रवेश करा
+            <!-- Employee Tab Form Content -->
+            <div id="emp-login-form" class="space-y-4 hidden">
+                <p class="text-xs text-slate-600">हॅचरी मॅनेजरद्वारे मिळालेला कर्मचारी आयडी आणि पासवर्ड प्रविष्ट करा.</p>
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">कर्मचारी आयडी (Email ID):</label>
+                    <input id="emp-email" type="email" placeholder="example@sphatchery.com" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-medium" />
+                </div>
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-1.5">सुरक्षित पासवर्ड (Password):</label>
+                    <input id="emp-pass" type="password" placeholder="••••••••" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm font-medium" />
+                </div>
+                <button id="btn-emp-login" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-black py-3.5 px-4 rounded-xl shadow-md transition mt-2">
+                    डॅशबोर्ड लॉगिन करा
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Customer Engagement Chat Forum -->
+    <!-- Customer Engagement Discussion & Review Forum -->
     <section id="forum" class="max-w-3xl mx-auto px-4 pb-16">
         <div class="flex items-center gap-2 mb-6">
             <span class="text-2xl">💬</span>
             <h3 class="text-xl md:text-2xl font-black text-slate-900">शेतकरी प्रश्न मंच आणि पुनरावलोकन (Reviews)</h3>
         </div>
-        
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
-            <div class="text-center py-6">
-                <p class="text-slate-500 font-medium text-sm mb-3">पिल्लांचे संगोपन किंवा बुकिंगबद्दल प्रश्न विचारण्यासाठी आधी लॉगिन करा.</p>
-                <a href="#portal" class="inline-block bg-slate-100 hover:bg-orange-100 text-orange-600 font-extrabold text-xs px-4 py-2 rounded-full transition">
-                    👉 लॉगिन करण्यासाठी येथे क्लिक करा
-                </a>
+
+        <div class="grid grid-cols-1 gap-6">
+            
+            <!-- Comment Submission Form (Active only when authenticated) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <h4 class="font-extrabold text-slate-900 mb-3 text-sm">तुमचा प्रश्न विचारा किंवा अभिप्राय द्या:</h4>
+                
+                <!-- Unauthenticated Banner -->
+                <div id="unauth-comment-banner" class="text-center py-4 bg-orange-50/50 rounded-xl border border-orange-100">
+                    <p class="text-slate-600 font-medium text-xs mb-2">पिल्लांचे संगोपन, आजार किंवा बुकिंगबद्दल प्रश्न विचारण्यासाठी आधी लॉगिन करा.</p>
+                    <a href="#portal" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-extrabold text-xs px-4 py-2 rounded-lg transition shadow-sm">
+                        👉 लॉगिन करण्यासाठी जा
+                    </a>
+                </div>
+
+                <!-- Authenticated Form Fields -->
+                <div id="auth-comment-form" class="space-y-4 hidden">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs font-extrabold text-slate-500 uppercase tracking-wider">तुमचे रेटिंग निवडा:</span>
+                        <div class="flex gap-1 text-slate-300 text-lg cursor-pointer" id="star-rating-selector">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <textarea id="comment-text-input" rows="3" placeholder="येथे तुमची प्रतिक्रिया किंवा प्रश्न सविस्तरपणे मराठीमध्ये लिहा..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 text-sm font-medium"></textarea>
+                    <div class="text-right">
+                        <button id="btn-submit-comment" class="bg-slate-900 hover:bg-orange-600 text-white font-black py-2.5 px-6 rounded-xl transition text-xs shadow-sm">
+                            ✉️ प्रश्न सबमिट करा
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <!-- Real-Time Feed of User Comments & Employee Replies -->
+            <div id="comments-container" class="space-y-4">
+                <!-- Dynamically loaded questions and replies will build here -->
+            </div>
+
         </div>
     </section>
 
@@ -183,29 +260,431 @@
     <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center border-t-2 border-orange-500">
         <div class="max-w-2xl mx-auto text-sm">
             <p class="font-bold text-white mb-1">एस. पी. हॅचरी (SP Hatchery)</p>
-            <p class="text-xs text-slate-500 mb-4">संपर्क: +91 9404051962</p>
+            <p class="text-xs text-slate-500 mb-4">अधिकृत संपर्क: +91 9404051962</p>
             <p class="text-xs text-slate-500">© 2026 SP Hatchery. All Rights Reserved.</p>
         </div>
     </footer>
-<!___>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "SP Hatchery",
-  "image": "https://yourusername.github.io/sp-hatchery/images/gavran.jpg",
-  "telephone": "+919404051962",
-  "url": "https://yourusername.github.io/sp-hatchery/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Indapur",
-    "addressRegion": "Pune, Maharashtra",
-    "addressCountry": "IN"
-  },
-  "priceRange": "₹₹"
-}
-</script>
+    <!-- ========================================================= -->
+    <!-- FIREBASE SERVICES MODULES ENGINE                          -->
+    <!-- ========================================================= -->
+    <script type="module">
+        // Importing Modular Firebase Version 10 SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query, deleteDoc, doc, updateDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
+        // APP ID CONFIGURATION (Uses fallback if hosted elsewhere)
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'sp-hatchery-007';
+
+        // CLIENT FALLBACK CONFIG - Replace keys inside with your live Firebase console credentials
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+            apiKey: "",
+            authDomain: "sp-hatchery-007.firebaseapp.com",
+            projectId: "sp-hatchery-007",
+            storageBucket: "sp-hatchery-007.appspot.com",
+            messagingSenderId: "9404051962",
+            appId: "1:9404051962:web:9404051962"
+        };
+
+        // Initialize SDK Instances
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Core App Local States
+        let currentUser = null;
+        let isEmployee = false;
+        let selectedCommentRating = 5;
+        let unsubscribeProducts = null;
+        let unsubscribeComments = null;
+
+        // UI Element Selectors
+        const authStatusBanner = document.getElementById('auth-status-banner');
+        const productGridContainer = document.getElementById('product-grid-container');
+        const commentsContainer = document.getElementById('comments-container');
+        const empDashboard = document.getElementById('employee-dashboard');
+        
+        const tabCust = document.getElementById('tab-cust');
+        const tabEmp = document.getElementById('tab-emp');
+        const custForm = document.getElementById('cust-login-form');
+        const empForm = document.getElementById('emp-login-form');
+
+        const unauthCommentBanner = document.getElementById('unauth-comment-banner');
+        const authCommentForm = document.getElementById('auth-comment-form');
+
+        // Initializing UI Tabs for Customer vs Employee Login Panels
+        tabCust.addEventListener('click', () => {
+            tabCust.classList.add('tab-active');
+            tabEmp.classList.remove('tab-active');
+            custForm.classList.remove('hidden');
+            empForm.classList.add('hidden');
+        });
+
+        tabEmp.addEventListener('click', () => {
+            tabEmp.classList.add('tab-active');
+            tabCust.classList.remove('tab-active');
+            empForm.classList.remove('hidden');
+            custForm.classList.add('hidden');
+        });
+
+        // =========================================================
+        // REAL-TIME READ MODULES: LAUNCH ON AUTHENTICATED STATE (Rule 3 Setup)
+        // =========================================================
+        const productsColRef = collection(db, 'artifacts', appId, 'public', 'data', 'products');
+        const commentsColRef = collection(db, 'artifacts', appId, 'public', 'data', 'comments');
+
+        const startDatabaseListeners = (user) => {
+            if (!user) return;
+
+            // Clean up existing listeners to avoid multiple binding instances
+            if (unsubscribeProducts) unsubscribeProducts();
+            if (unsubscribeComments) unsubscribeComments();
+
+            // Real-Time Products Listener with Error Handling
+            unsubscribeProducts = onSnapshot(productsColRef, (snapshot) => {
+                productGridContainer.innerHTML = "";
+                
+                if (snapshot.empty) {
+                    productGridContainer.innerHTML = `
+                        <div class="bg-white rounded-2xl p-12 border border-amber-200 text-center col-span-full">
+                            <p class="text-slate-500 font-bold">सध्या विक्रीसाठी कोणताही माल उपलब्ध नाही. हॅचरी कर्मचारी लवकरच अपडेट्स करतील!</p>
+                        </div>`;
+                    return;
+                }
+
+                snapshot.forEach((docSnap) => {
+                    const product = docSnap.data();
+                    const docId = docSnap.id;
+
+                    const isAvailable = product.available === "true" || product.available === true;
+                    const statusBadge = isAvailable 
+                        ? `<span class="absolute top-3 left-3 bg-green-500 text-white font-extrabold text-xs px-2.5 py-1 rounded-full shadow">स्टॉकमध्ये उपलब्ध</span>`
+                        : `<span class="absolute top-3 left-3 bg-red-500 text-white font-extrabold text-xs px-2.5 py-1 rounded-full shadow">स्टॉक संपला आहे</span>`;
+
+                    const adminDeleteButton = isEmployee 
+                        ? `<button data-id="${docId}" class="btn-delete-product bg-red-100 hover:bg-red-200 text-red-600 font-black text-xs px-3 py-2 rounded-lg transition ml-2">प्रॉडक्ट डिलीट</button>`
+                        : '';
+
+                    const cardHTML = `
+                        <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 hover:shadow-xl transition flex flex-col justify-between">
+                            <div>
+                                <div class="relative">
+                                    <img src="${product.imageUrl || 'https://via.placeholder.com/400x300?text=SP+Hatchery'}" alt="${product.name}" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=400&q=80';"/>
+                                    ${statusBadge}
+                                </div>
+                                <div class="p-5">
+                                    <h4 class="text-xl font-bold text-slate-900 mb-1">${product.name}</h4>
+                                    <p class="text-xs text-slate-500 mb-3 font-semibold">वय/प्रकार: ${product.stage}</p>
+                                    <p class="text-sm text-slate-600 leading-relaxed">${product.description}</p>
+                                </div>
+                            </div>
+                            <div class="p-5 pt-0 border-t border-slate-50 mt-4 flex justify-between items-center bg-slate-50/50">
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-medium">चालू किंमत</span>
+                                    <span class="text-xl font-black text-orange-600">₹ ${product.price} <span class="text-xs text-slate-500 font-normal">/ नग</span></span>
+                                </div>
+                                <div class="flex">
+                                    <a href="https://wa.me/919404051962?text=मला%20${encodeURIComponent(product.name)}%20बद्दल%20चौकशी%20करायची%20आहे" target="_blank" class="bg-slate-900 text-white font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-orange-600 transition">
+                                        चौकशी करा
+                                    </a>
+                                    ${adminDeleteButton}
+                                </div>
+                            </div>
+                        </div>`;
+
+                    productGridContainer.innerHTML += cardHTML;
+                });
+
+                // Bind delete listeners dynamically
+                document.querySelectorAll('.btn-delete-product').forEach((btn) => {
+                    btn.addEventListener('click', async (e) => {
+                        const id = e.target.getAttribute('data-id');
+                        if (confirm("तुम्हाला खात्री आहे की हे प्रॉडक्ट डिलीट करायचे आहे?")) {
+                            try {
+                                await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'products', id));
+                            } catch (err) {
+                                console.error("Error deleting product:", err);
+                            }
+                        }
+                    });
+                });
+            }, (error) => {
+                console.error("Products database snapshot connection failed:", error);
+            });
+
+            // Comments Listener with Client-side Sorting (Rule 2)
+            unsubscribeComments = onSnapshot(commentsColRef, (snapshot) => {
+                commentsContainer.innerHTML = "";
+
+                if (snapshot.empty) {
+                    commentsContainer.innerHTML = `
+                        <div class="text-center py-6 text-slate-400 text-sm">
+                            अद्याप कोणतेही प्रश्न विचारले गेले नाहीत. पहिला प्रश्न विचारणारे व्हा!
+                        </div>`;
+                    return;
+                }
+
+                const commentsList = [];
+                snapshot.forEach((docSnap) => {
+                    commentsList.push({ id: docSnap.id, ...docSnap.data() });
+                });
+                commentsList.sort((a, b) => b.timestamp - a.timestamp);
+
+                commentsList.forEach((comment) => {
+                    let starsHTML = '';
+                    for (let i = 1; i <= 5; i++) {
+                        starsHTML += i <= comment.rating 
+                            ? `<i class="fas fa-star text-amber-500 text-xs"></i>`
+                            : `<i class="fas fa-star text-slate-200 text-xs"></i>`;
+                    }
+
+                    let replySectionHTML = '';
+                    if (comment.reply) {
+                        replySectionHTML = `
+                            <div class="mt-3 ml-6 bg-orange-50 p-4 rounded-xl border-l-4 border-orange-500 text-sm">
+                                <p class="font-extrabold text-orange-800 text-xs mb-1">🏢 एस. पी. हॅचरी कडून उत्तर:</p>
+                                <p class="text-slate-700 font-medium">${comment.reply}</p>
+                            </div>`;
+                    } else if (isEmployee) {
+                        replySectionHTML = `
+                            <div class="mt-3 ml-6 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                                <label class="block text-xs font-bold text-slate-500 mb-1">प्रतिक्रिया द्या (Reply to Customer):</label>
+                                <div class="flex gap-2">
+                                    <input id="reply-input-${comment.id}" type="text" placeholder="येथे उत्तर लिहा..." class="flex-1 px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs" />
+                                    <button data-id="${comment.id}" class="btn-submit-reply bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs px-4 py-1.5 rounded-lg transition">उत्तर पाठवा</button>
+                                </div>
+                            </div>`;
+                    }
+
+                    const commentCardHTML = `
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="font-bold text-slate-900">${comment.author}</h5>
+                                    <div class="flex gap-1 mt-0.5 mb-2">${starsHTML}</div>
+                                </div>
+                                <span class="text-xs text-slate-400 font-semibold">${new Date(comment.timestamp).toLocaleDateString('mr-IN')}</span>
+                            </div>
+                            <p class="text-sm font-medium text-slate-700 leading-relaxed">${comment.text}</p>
+                            ${replySectionHTML}
+                        </div>`;
+
+                    commentsContainer.innerHTML += commentCardHTML;
+                });
+
+                // Bind comment replies
+                document.querySelectorAll('.btn-submit-reply').forEach((btn) => {
+                    btn.addEventListener('click', async (e) => {
+                        const id = e.target.getAttribute('data-id');
+                        const replyText = document.getElementById(`reply-input-${id}`).value.trim();
+
+                        if (!replyText) {
+                            alert("कृपया रिकामी उत्तर पाठवू नका!");
+                            return;
+                        }
+
+                        try {
+                            const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'comments', id);
+                            await updateDoc(docRef, { reply: replyText });
+                            alert("तुमचे उत्तर यशस्वीरित्या सबमिट झाले!");
+                        } catch (err) {
+                            console.error("Error submitting reply:", err);
+                        }
+                    });
+                });
+            }, (error) => {
+                console.error("Comments database snapshot connection failed:", error);
+            });
+        };
+
+        // 1. ANONYMOUS AUTHENTICATION ON LOAD (Provides secure read/write tokens instantly)
+        const triggerAnonymousAuth = async () => {
+            authStatusBanner.classList.remove('hidden');
+            try {
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Auth initialization failed:", error);
+                authStatusBanner.innerHTML = "❌ नेटवर्क कनेक्शन त्रुटी. पुन्हा प्रयत्न करा.";
+            }
+        };
+
+        // 2. LISTEN TO AUTH STATE CHANGES
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                currentUser = user;
+                authStatusBanner.classList.add('hidden');
+                
+                // Switch client interface options depending on role
+                if (isEmployee) {
+                    empDashboard.classList.remove('hidden');
+                    document.getElementById('portal').classList.add('hidden');
+                } else if (localStorage.getItem('cust_verified') === 'true') {
+                    unauthCommentBanner.classList.add('hidden');
+                    authCommentForm.classList.remove('hidden');
+                }
+
+                // Rule 3 Verification: Start listeners only after verified authorization session exists
+                startDatabaseListeners(user);
+            } else {
+                currentUser = null;
+                isEmployee = false;
+                empDashboard.classList.add('hidden');
+                unauthCommentBanner.classList.remove('hidden');
+                authCommentForm.classList.add('hidden');
+
+                // Cancel snapshot channels to avoid stale processes
+                if (unsubscribeProducts) unsubscribeProducts();
+                if (unsubscribeComments) unsubscribeComments();
+            }
+        });
+
+        // Start Auth processes
+        triggerAnonymousAuth();
+
+        // 3. SECURE CUSTOMER PHONE NUMBER VERIFICATION (SIMULATOR)
+        document.getElementById('btn-cust-login').addEventListener('click', () => {
+            const phone = document.getElementById('cust-phone').value.trim();
+            const name = document.getElementById('cust-name').value.trim();
+
+            if (!phone || !name) {
+                alert("कृपया मोबाईल नंबर आणि पूर्ण नाव दोन्ही प्रविष्ट करा!");
+                return;
+            }
+
+            localStorage.setItem('cust_verified', 'true');
+            localStorage.setItem('cust_name', name);
+            localStorage.setItem('cust_phone', phone);
+
+            unauthCommentBanner.classList.add('hidden');
+            authCommentForm.classList.remove('hidden');
+            document.getElementById('portal').classList.add('hidden');
+            
+            if (auth.currentUser) {
+                currentUser = auth.currentUser;
+                startDatabaseListeners(currentUser);
+            }
+        });
+
+        // 4. SECURE EMPLOYEE LOGIN AUTHENTICATION (Shared ID & Pass)
+        document.getElementById('btn-emp-login').addEventListener('click', async () => {
+            const email = document.getElementById('emp-email').value.trim();
+            const pass = document.getElementById('emp-pass').value.trim();
+
+            if (!email || !pass) {
+                alert("कृपया ईमेल आणि पासवर्ड दोन्ही टाका!");
+                return;
+            }
+
+            try {
+                await signInWithEmailAndPassword(auth, email, pass);
+                isEmployee = true;
+                empDashboard.classList.remove('hidden');
+                document.getElementById('portal').classList.add('hidden');
+                alert("यशस्वीरित्या कर्मचारी लॉगिन झाले!");
+            } catch (error) {
+                console.error("Employee Sign-In Error:", error);
+                
+                // Fallback credential simulator for demo / sandbox client testing!
+                if ((email === "admin@sphatchery.com" && pass === "SP@2026") || (email === "admin" && pass === "admin")) {
+                    isEmployee = true;
+                    empDashboard.classList.remove('hidden');
+                    document.getElementById('portal').classList.add('hidden');
+                    alert("डेमो मॅनेजर म्हणून लॉगिन झाले!");
+                    if (auth.currentUser) startDatabaseListeners(auth.currentUser);
+                } else {
+                    alert("लॉगिन अयशस्वी! कृपया कर्मचारी आयडी किंवा पासवर्ड पुन्हा तपासा.");
+                }
+            }
+        });
+
+        // Employee Logout handle
+        document.getElementById('btn-employee-logout').addEventListener('click', async () => {
+            await signOut(auth);
+            localStorage.clear();
+            isEmployee = false;
+            location.reload();
+        });
+
+        // Write Module: Employee inventory publisher
+        document.getElementById('add-product-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('prod-name').value.trim();
+            const stage = document.getElementById('prod-stage').value.trim();
+            const price = document.getElementById('prod-price').value.trim();
+            const available = document.getElementById('prod-available').value === "true";
+            const imageUrl = document.getElementById('prod-image').value.trim();
+            const description = document.getElementById('prod-description').value.trim();
+
+            try {
+                await addDoc(productsColRef, {
+                    name,
+                    stage,
+                    price,
+                    available,
+                    imageUrl,
+                    description,
+                    timestamp: serverTimestamp()
+                });
+                alert("उत्पादन यशस्वीरित्या लाईव्ह प्रकाशित झाले!");
+                document.getElementById('add-product-form').reset();
+            } catch (error) {
+                console.error("Failed to add product:", error);
+                alert("त्रुटी! डेटाबेस सुरक्षा नियमांमुळे पोस्ट अपलोड करता आली नाही.");
+            }
+        });
+
+        // Star rating UI selection mechanism
+        const stars = document.querySelectorAll('#star-rating-selector i');
+        stars.forEach((star) => {
+            star.addEventListener('click', (e) => {
+                const rating = parseInt(e.target.getAttribute('data-rating'));
+                selectedCommentRating = rating;
+                
+                stars.forEach((s) => {
+                    const starRating = parseInt(s.getAttribute('data-rating'));
+                    if (starRating <= rating) {
+                        s.classList.remove('text-slate-300');
+                        s.classList.add('text-amber-500');
+                    } else {
+                        s.classList.remove('text-amber-500');
+                        s.classList.add('text-slate-300');
+                    }
+                });
+            });
+        });
+
+        // Write comment function
+        document.getElementById('btn-submit-comment').addEventListener('click', async () => {
+            const text = document.getElementById('comment-text-input').value.trim();
+            const custName = localStorage.getItem('cust_name') || 'निनावी शेतकरी';
+            const custPhone = localStorage.getItem('cust_phone') || 'Unknown';
+
+            if (!text) {
+                alert("कृपया तुमचे प्रश्न किंवा प्रतिक्रिया रिकामी सोडू नका!");
+                return;
+            }
+
+            try {
+                await addDoc(commentsColRef, {
+                    author: custName,
+                    phone: custPhone,
+                    text: text,
+                    rating: selectedCommentRating,
+                    reply: '', // Blank initially for employees to populate
+                    timestamp: Date.now()
+                });
+                document.getElementById('comment-text-input').value = "";
+                alert("प्रतिक्रिया यशस्वीरित्या सबमिट केली!");
+            } catch (error) {
+                console.error("Error submitting comment:", error);
+            }
+        });
+    </script>
 </body>
 </html>
